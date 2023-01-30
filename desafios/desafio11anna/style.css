@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'honey';
+    src: url(fontes/Honey\ Florist\ -\ Personal\ Use.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #F8C8C4;
+    --cor1: #FE9997;
+    --cor2: #DE045B;
+    --cor3: #A6096A;
+    --cor4: #700F3C;
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'honey', cursive; 
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    min-height: 150px;
+    padding-top: 40px;
+}
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 4em;
+    font-weight: normal;
+    text-align: left;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > h2 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 15pt;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+    color: white;
+    font-size: 3em;
+    font-family: var(--fonte-destaque);
+    max-width: 600;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+nav {
+    
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418);
+}
+
+
+nav > a {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor0);
+    
+}
+
+main {
+    background-color: black;
+    min-width: 150px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+    
+}
+
+main img {
+    width: 100%;
+}
+
+main  h1 {
+    font-family: var(--fonte-padrao);
+    color: black;
+    font-size: 1.6em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), transparent ) ;
+    text-indent: 10px;
+    padding-top: 5px;
+}
+
+main p {
+    color: white;
+    margin: auto;
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.0em;
+    padding-top: 20px;
+    
+}
+
+footer > h1 {
+    font-size: 1.6em;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    margin: auto;
+    font-family: var(--fonte-padrao);
+    color: black;
+}
+    
+
+footer > ul {
+    columns: 2;
+    list-style-type: none;
+    padding-top: 5px;
+    
+}
+
+footer >ul >li > a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
