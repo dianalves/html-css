@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding:10px;
+        }
+
+        col.cnome {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Programadora</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>F</td>
+                <td>56</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Bruno Medonça</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Vendendor</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>M</td>
+                <td>65</td>
+                <td>Médico</td>
+            </tr>
+            <tr>
+                <td>Pedro Henrique Alves</td>
+                <td>M</td>
+                <td>67</td>
+                <td>Nutricionista</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
